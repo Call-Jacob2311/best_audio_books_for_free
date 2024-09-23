@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Audio Books For Free - Library</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to external stylesheet -->
+</head>
+
+<body>
+    <header>
+        <div id="header" class="header">
+            <div id="profile" class="profile">
+                <img src="../imgs/Icons/profile.jpg" alt="profileToken">
+            </div>
+            <h1 id="name" class="name">Best Audio Books For Free</h1>
+            <!-- Simulate a smartphone / tablet -->
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="../index.html">Home</a>
+                <a href="library.html">Browse Series</a>
+                <a href="newsletterAndUpdates.html">Newsletters / Updates</a>
+                <a href="contact.php">Contact</a>
+            </div>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="filter-bar" class="filter-bar">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('fiction')"> Fiction</button>
+        <button class="btn" onclick="filterSelection('nonfiction')"> Nonfiction</button>
+        <button class="btn" onclick="filterSelection('science_fiction')"> Science Fiction</button>
+        <button class="btn" onclick="filterSelection('philosophical')"> Philosophical</button>
+        <button class="btn" onclick="filterSelection('gothic')"> Gothic</button>
+        <button class="btn" onclick="filterSelection('psychological')"> Psychological</button>
+        <button class="btn" onclick="filterSelection('historical')"> Historical</button>
+        <button class="btn" onclick="filterSelection('quick_author')"> Quick Author</button>
+        <button class="btn" onclick="filterSelection('horror')"> Horror</button>
+        <button class="btn" onclick="filterSelection('mystery')"> Mystery</button>
+        <button class="btn" onclick="filterSelection('crime')"> Crime</button>
+    </div>
+
+    <div class="library-container" id="library-container">
+        <div class="filterDiv fiction adventure fantasy" id="book">
+            <a href="Books/tarzan_of_the_apes.html"><img src="../imgs/bookCovers/tarzan_of_the_apes.png" alt="tarzan_of_the_apes"></a>
+            <a href="Books/tarzan_of_the_apes.html">
+                <p>Tarzan of the Apes</p>
+            </a>
+        </div>
+        <div class="filterDiv science_fiction gothic horror mystery" id="book">
+            <a href="Books/the_strange_case_of_dr_jekyll_and_mr_hyde.html"><img src="../imgs/bookCovers/The_Strange_Case_of_Dr_Jekyll_and_Mr_Hyde.png" alt="the_strange_case_of_dr_jekyll_and_mr_hyde"></a>
+            <a href="Books/the_strange_case_of_dr_jekyll_and_mr_hyde.html">
+                <p>The Strange Case of Dr Jekyll and Mr Hyde</p>
+            </a>
+        </div>
+        <div class="filterDiv fiction gothic mystery crime" id="book">
+            <a href="Books/the_hound_of_the_baskervilles.html"><img src="../imgs/bookCovers/The_Hound_Of_The_Baskervilles.png" alt="the_hound_of_the_baskervilles"></a>
+            <a href="Books/the_hound_of_the_baskervilles.html">
+                <p>The Hound Of The Baskervilles</p>
+            </a>
+        </div>
+        <div class="filterDiv gothic fiction" id="book">
+            <a href="Books/wuthering_heights.html"><img src="../imgs/bookCovers/Wuthering_Heights.png" alt="wuthering_heights"></a>
+            <a href="Books/wuthering_heights.html">
+                <p>Wuthering Heights</p>
+            </a>
+        </div>
+        <div class="filterDiv historical quick_author" id="book">
+            <a href="Books/a_life_sketch-and_quick_biography_of_edgar_rice_burroughs.html"><img src="../imgs/bookCovers/A_Life_Sketch-and_Quick_Biography_of_Edgar_Rice_Burroughs.png" alt="a_life_sketch-and_quick_biography_of_edgar_rice_burroughs"></a>
+            <a href="Books/a_life_sketch-and_quick_biography_of_edgar_rice_burroughs.html">
+                <p>A Life Sketch and Quick Biography of Edgar Rice Burroughs</p>
+            </a>
+        </div>
+        <div class="filterDiv historical travel" id="book">
+            <a href="Books/the_oregon_trail.html"><img src="../imgs/bookCovers/oregonTrail.png" alt="the_oregon_trail"></a>
+            <a href="Books/the_oregon_trail.html">
+                <p>The Oregon Trail</p>
+            </a>
+        </div>
+        <div class="filterDiv historical quick_author" id="book">
+            <a href="Books/a_life_sketch_and_quick_biography_of_alice_morse_earle.html"><img src="../imgs/bookCovers/A_Life_Sketch_and_Quick_Biography_of_Alice_Morse_Earle.png" alt="a_life_sketch_and_quick_biography_of_alice_morse_earle"></a>
+            <a href="Books/a_life_sketch_and_quick_biography_of_alice_morse_earle.html">
+                <p>A Life Sketch and Quick Biography of Alice Morse Earle</p>
+            </a>
+        </div>
+        <div class="filterDiv fiction" id="book">
+            <a href="Books/a_passage_to_india.html"><img src="../imgs/bookCovers/a_passage_to_india.png" alt="a_passage_to_india"></a>
+            <a href="Books/a_passage_to_india.html">
+                <p>A Passage to India</p>
+            </a>
+        </div>
+        <div class="filterDiv historical quick_author" id="book">
+            <a href="Books/a_life_sketch_and_quick_biography_of_robert_louis_stevenson.html"><img src="../imgs/bookCovers/a_life_sketch_and_quick_biography_of_robert_louis_stevenson.png" alt="a_life_sketch_and_quick_biography_of_robert_louis_stevenson"></a>
+            <a href="Books/a_life_sketch_and_quick_biography_of_robert_louis_stevenson.html">
+                <p>A Life Sketch and Quick Biography of Robert Louis Stevenson</p>
+            </a>
+        </div>
+        <div class="filterDiv historical quick_author" id="book">
+            <a href="Books/a_life_sketch_and_quick_biography_of_e_m_forster.html"><img src="../imgs/bookCovers/a_life_sketch_and_quick_biography_of_e_m_forster.png" alt="a_life_sketch_and_quick_biography_of_e_m_forster"></a>
+            <a href="Books/a_life_sketch_and_quick_biography_of_e_m_forster.html">
+                <p>A Life Sketch and Quick Biography of E. M. Forster</p>
+            </a>
+        </div>
+        <div class="filterDiv historical quick_author" id="book">
+            <a href="Books/a_life_sketch_and_quick_biography_of_charlotte_bronte.html"><img src="../imgs/bookCovers/a_life_sketch_and_quick_biography_of_charlotte_bronte.png" alt="a_life_sketch_and_quick_biography_of_charlotte_brontë"></a>
+            <a href="Books/a_life_sketch_and_quick_biography_of_charlotte_bronte.html">
+                <p>A Life Sketch and Quick Biography of Charlotte Brontë</p>
+            </a>
+        </div>
+    </div>
+    
+    <footer id="footer" class="footer">
+        <p>&copy; 2024 Best Audio Books For Free - <a href="https://www.youtube.com/@BestAudioBooksforFree">YouTube</a> - <a href="mailto:bestaudiobooksforfree@gmail.com">Email</a></p>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("library-container").style.zIndex = "-1";
+            document.getElementById("filter-bar").style.zIndex = "-1";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("library-container").style.zIndex = "0";
+            document.getElementById("filter-bar").style.zIndex = "0";
+        }
+        
+        filterSelection("all")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("filter-bar");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+    </script>
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+
+</html>

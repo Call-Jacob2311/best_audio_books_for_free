@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Audio Books For Free - Tarzan of the Apes</title>
+    <link rel="stylesheet" href="../../css/style.css"> <!-- Link to external stylesheet -->
+</head>
+
+<body>
+    <header>
+        <div id="header" class="header">
+            <div id="profile" class="profile">
+                <img src="../../imgs/Icons/profile.jpg" alt="profileToken">
+            </div>
+            <h1 id="name" class="name">Best Audio Books For Free</h1>
+            <!-- Simulate a smartphone / tablet -->
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="../../index.html">Home</a>
+                <a href="../library.html">Browse Series</a>
+                <a href="../newsletterAndUpdates.html">Newsletters / Updates</a>
+                <a href="../contact.php">Contact</a>
+            </div>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class="book-view-container" id="book-view-container">
+        <a href="../library.html" class="back" id="back"> Go Back</a>
+        <img src="../../imgs/bookCovers/tarzan_of_the_apes.png">
+        <ul>
+            <li>Name: Tarzan of the Apes</li>
+            <li>Author: Edgar Rice Burroughs</li>
+            <li>Genre: Fiction, Adventure, Fantasy</li>
+            <li>Parts: 4</li>
+            <li>Publish Year: 1912</li>
+            <li>Uploaded Date: Jun 28, 2024</li>
+            <li>Youtube Link: <a href="https://www.youtube.com/watch?v=X-55HVvXPDg">Link</a></li>
+        </ul>
+    </div>
+
+
+    <footer id="footer" class="footer">
+        <p>&copy; 2024 Best Audio Books For Free - <a href="https://www.youtube.com/@BestAudioBooksforFree">YouTube</a> - <a href="mailto:bestaudiobooksforfree@gmail.com">Email</a></p>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("book-view-container").style.zIndex = "-1";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("book-view-container").style.zIndex = "0";
+        }
+    </script>
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+
+</html>
