@@ -34,6 +34,9 @@
         <button class="btn active" onclick="filterSelection('all')"> Show all</button>
         <button class="btn" onclick="filterSelection('fiction')"> Fiction</button>
         <button class="btn" onclick="filterSelection('nonfiction')"> Nonfiction</button>
+        <button class="btn" onclick="filterSelection('adventure')"> Adventure</button>
+        <button class="btn" onclick="filterSelection('fantasy')"> Fantasy</button>
+        <button class="btn" onclick="filterSelection('romance')"> Romance</button>
         <button class="btn" onclick="filterSelection('science_fiction')"> Science Fiction</button>
         <button class="btn" onclick="filterSelection('philosophical')"> Philosophical</button>
         <button class="btn" onclick="filterSelection('gothic')"> Gothic</button>
@@ -43,10 +46,11 @@
         <button class="btn" onclick="filterSelection('horror')"> Horror</button>
         <button class="btn" onclick="filterSelection('mystery')"> Mystery</button>
         <button class="btn" onclick="filterSelection('crime')"> Crime</button>
+        <button class="btn" onclick="filterSelection('poetry')"> Poetry</button>
     </div>
 
     <div class="library-container" id="library-container">
-        <div class="filterDiv fiction adventure fantasy" id="book">
+        <div class="filterDiv fiction adventure fantasy adventure" id="book">
             <a href="Books/tarzan_of_the_apes.html"><img src="../imgs/bookCovers/tarzan_of_the_apes.png" alt="tarzan_of_the_apes"></a>
             <a href="Books/tarzan_of_the_apes.html">
                 <p>Tarzan of the Apes</p>
@@ -110,6 +114,73 @@
             <a href="Books/a_life_sketch_and_quick_biography_of_charlotte_bronte.html"><img src="../imgs/bookCovers/a_life_sketch_and_quick_biography_of_charlotte_bronte.png" alt="a_life_sketch_and_quick_biography_of_charlotte_brontë"></a>
             <a href="Books/a_life_sketch_and_quick_biography_of_charlotte_bronte.html">
                 <p>A Life Sketch and Quick Biography of Charlotte Brontë</p>
+            </a>
+        </div>
+        <div class="filterDiv fiction gothic romance" id="book">
+            <a href="Books/jane_eyre.html"><img src="../imgs/bookCovers/jane_eyre.png" alt="jane_eyre"></a>
+            <a href="Books/jane_eyre.html">
+                <p>Jane Eyre</p>
+            </a>
+        </div>
+        <div class="filterDiv historical quick_author" id="book">
+            <a href="Books/a_life_sketch_and_quick_biography_of_sir_arthur_conan_doyle.html"><img src="../imgs/bookCovers/a_life_sketch_and_quick_biography_of_sir_arthur_conan_doyle.png" alt="a_life_sketch_and_quick_biography_of_sir_arthur_conan_doyle"></a>
+            <a href="Books/a_life_sketch_and_quick_biography_of_sir_arthur_conan_doyle.html">
+                <p>A Life Sketch and Quick Biography of Sir Arthur Conan Doyle</p>
+            </a>
+        </div>
+        <div class="filterDiv historical quick_author" id="book">
+            <a href="Books/a_life_sketch_and_quick_biography_of_emily_bronte.html"><img src="../imgs/bookCovers/a_life_sketch_and_quick_biography_of_emily_bronte.png" alt="a_life_sketch_and_quick_biography_of_emily_bronte"></a>
+            <a href="Books/a_life_sketch_and_quick_biography_of_emily_bronte.html">
+                <p>A Life Sketch and Quick Biography of Emily Brontë</p>
+            </a>
+        </div>
+        <div class="filterDiv historical quick_author" id="book">
+            <a href="Books/a_life_sketch_and_quick_biography_of_francis_parkman.html"><img src="../imgs/bookCovers/a_life_sketch_and_quick_biography_of_francis_parkman.png" alt="a_life_sketch_and_quick_biography_of_francis_parkman"></a>
+            <a href="Books/a_life_sketch_and_quick_biography_of_francis_parkman.html">
+                <p>A Life Sketch and Quick Biography of Francis Parkman</p>
+            </a>
+        </div>
+        <div class="filterDiv fantasy fiction adventure" id="book">
+            <a href="Books/the_beasts_of_tarzan.html"><img src="../imgs/bookCovers/the_beasts_of_tarzan.png" alt="the_beasts_of_tarzan"></a>
+            <a href="Books/the_beasts_of_tarzan.html">
+                <p>The Beasts of Tarzan</p>
+            </a>
+        </div>
+        <div class="filterDiv fantasy fiction adventure" id="book">
+            <a href="Books/the_return_of_tarzan.html"><img src="../imgs/bookCovers/the_return_of_tarzan.png" alt="the_return_of_tarzan"></a>
+            <a href="Books/the_return_of_tarzan.html">
+                <p>The Return of Tarzan</p>
+            </a>
+        </div>
+        
+        <div class="filterDiv epic poetry" id="book">
+            <a href="Books/the_odyssey.html"><img src="../imgs/bookCovers/the_odyssey.png" alt="the_odyssey"></a>
+            <a href="Books/the_odyssey.html">
+                <p>The Odyssey</p>
+            </a>
+        </div>
+        <div class="filterDiv historical quick_author" id="book">
+            <a href="Books/a_life_sketch_and_quick_biography_of_homer.html"><img src="../imgs/bookCovers/a_life_sketch_and_quick_biography_of_homer.png" alt="a_life_sketch_and_quick_biography_of_homer"></a>
+            <a href="Books/a_life_sketch_and_quick_biography_of_homer.html">
+                <p>A Life Sketch and Quick Biography of Homer</p>
+            </a>
+        </div>
+        <div class="filterDiv historical quick_author" id="book">
+            <a href="Books/a_life_sketch_and_quick_biography_of_samuel_butler.html"><img src="../imgs/bookCovers/a_life_sketch_and_quick_biography_of_samuel_butler.png" alt="a_life_sketch_and_quick_biography_of_samuel_butler"></a>
+            <a href="Books/a_life_sketch_and_quick_biography_of_samuel_butler.html">
+                <p>A Life Sketch and Quick Biography of Samuel Butler</p>
+            </a>
+        </div>
+        <div class="filterDiv historical quick_author" id="book">
+            <a href="Books/a_life_sketch_and_quick_biography_of_bram_stoker.html"><img src="../imgs/bookCovers/a_life_sketch_and_quick_biography_of_bram_stoker.png" alt="a_life_sketch_and_quick_biography_of_bram_stoker"></a>
+            <a href="Books/a_life_sketch_and_quick_biography_of_bram_stoker.html">
+                <p>A Life Sketch and Quick Biography of Bram Stoker</p>
+            </a>
+        </div>
+        <div class="filterDiv gothic horror fantasy fiction" id="book">
+            <a href="Books/dracula.html"><img src="../imgs/bookCovers/dracula.png" alt="dracula"></a>
+            <a href="Books/dracula.html">
+                <p>Dracula</p>
             </a>
         </div>
     </div>
